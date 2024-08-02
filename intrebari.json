@@ -1,0 +1,57 @@
+[
+    { 
+       "intrebare": "De la ce vine prescurtarea PC?",
+        "variante": ["Personal Computer", "Permanent Computer", "Personal Container", "Pragmatic Computer"],
+        "corect": "0"
+    },
+    {
+       "intrebare": "De la ce vine prescurtarea RAM?",
+        "variante": ["Read All Memory", "Random Access Memory", "Readable Affixed Memory", "Reacheable Alternative Memoir"],
+        "corect": "1"
+    },
+    {
+      "intrebare": "Care dintre următoarele variante se referă la stocare internă?",
+      "variante": ["Solid State Drive (SSD)", "Universal Serial Bus (USB)", "Cross Dresser (CD)", "Digital Video Disc (DVD)"],
+      "corect": "0"
+    },
+    {
+      "intrebare": "Care dintre următoarele componente este responsabilă pentru afișarea imaginii pe monitor?",
+      "variante": ["Placa video", "Placa de sunet", "Procesorul", "Memoria RAM"],
+      "corect": "0"
+    },
+    {
+      "intrebare": "Ce reprezintă termenul 'overclocking' în contextul componentelor PC?",
+      "variante": [
+        "Întreținerea fizică a componentelor pentru a prelungi durata de viață",
+        "Reducerea consumului de energie al sistemului",
+        "Creșterea performanței unui component prin schimbarea setărilor de fabrică",
+        "Ajustarea culorilor și contrastului ecranului"
+      ],
+      "corect": "2"
+    },
+    {
+      "intrebare": "Care componentă a unui PC este considerată creierul sistemului?",
+      "variante": ["Procesorul", "Placa de bază", "Hard Disk-ul", "Sursa de alimentare"],
+      "corect": "0"
+    },
+    {
+      "intrebare": "Ce componentă este utilizată pentru a stoca date pe termen lung?",
+      "variante": ["Hard Disk", "Placa video", "Memoria RAM", "Cooler-ul"],
+      "corect": "0"
+    },
+    {
+      "intrebare": "Ce componentă furnizează energie electrică tuturor celorlalte componente dintr-un PC?",
+      "variante": ["Sursa de alimentare", "Placa de bază", "Procesorul", "Ventilatorul"],
+      "corect": "0"
+    },
+    {
+      "intrebare": "Ce componentă este esențială pentru a conecta și comunica cu toate celelalte componente ale PC-ului?",
+      "variante": ["Placa de bază", "Memoria RAM", "Placa video", "Hard Disk-ul"],
+      "corect": "0"
+    },
+    {
+      "intrebare": "Care componentă este responsabilă pentru răcirea procesorului?",
+      "variante": ["Cooler-ul", "Sursa de alimentare", "Placa de bază", "Placa video"],
+      "corect": "0"
+    }
+]

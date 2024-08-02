@@ -1,0 +1,33 @@
+<h2>Coș de cumpărături</h2>
+<form>
+    <% if (utilizator) { %>
+    <fieldset>
+        <div>            
+            <% if(produse) {%>
+                <table class="center">
+                    <tr>
+                        <th>Id</th>
+                        <th>Denumire produs</th>
+                        <th>Preț</th>
+                    </tr>
+                    <% for(var produs of produse) { %>
+                        <tr>
+                            <td><%- produs.id -%></td>
+                            <td><%- produs.nume -%></td>
+                            <td><%- produs.specificatii -%></td>
+                        </tr>    
+                    <%} %>
+                </table>
+            <% }%>        
+        </div>
+    </fieldset>
+    <br/>
+    <fieldset>
+        <div class="logat_ca">
+            <p><h4> Logat ca <%- utilizator -%> !<h4></p>
+        </div>   
+    </fieldset>
+    <%}else{%>
+        <h2>Pentru a avea acces la coșul de cumpărături trebuie să te autentifici în cont! </h2>
+    <%}%>
+</form>

@@ -1,0 +1,15 @@
+<form>
+    <br/>
+    <fieldset>
+        <h2>Ați răspuns corect la <%= raspunsuri %> întrebări! </h2>
+    </fieldset>
+    
+    <br/>
+    <% if(utilizator){ %>
+        <fieldset>
+            <div class="logat_ca">
+                <p><h4> Logat ca <%- utilizator -%> !<h4></p>
+            </div>   
+        </fieldset>
+        <% } %>
+</form>

@@ -1,0 +1,25 @@
+<h2>Chestionar</h2>
+<% if (utilizator) { %>
+    <h3> Puteți începe chestionarul!</h3>
+<form action="/rezultat-chestionar" method="post">
+    <fieldset class="chestionar">
+        <%for( var i = 0 in intrebari) { %>
+            <p><%= intrebari[i].intrebare %></p>
+            <% for (var j = 0 in intrebari[i].variante) { %>
+                <input type="radio" name="q<%= i %>" value="<%= j %>"/><%= intrebari[i].variante[j] %><br/> 
+            <% } %>
+        <% } %>
+        <br/>
+        <button class="button" type="submit"> Trimite</button> 
+    </fieldset>
+    <br/>
+    <fieldset>
+        <div class="logat_ca">
+            <p><h4> Logat ca <%- utilizator -%> !<h4></p>
+        </div>
+    </fieldset>
+</form>
+
+  <%}else{%>
+    <h2>Pentru a avea acces la chestionar trebuie să te autentifici în cont!</h2>
+<%}%>

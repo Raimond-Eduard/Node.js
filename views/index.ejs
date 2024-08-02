@@ -1,0 +1,70 @@
+<form>
+    <br/>
+
+    <% if(utilizator){ %>
+        <h2>Bine ai venit, <%= utilizator %> !</h4>
+    <% } else { %>
+        <h2> Bine ai venit!</h4>
+        <h2>Pentru a putea accesa site-ul și pentru a completa chestionarul, te rugăm să te autentifici în cont!</h4>
+    <% } %> 
+   
+
+    <% if(utilizator){ %>
+        <br/>
+    <fieldset>
+        <br/>
+        <form action="/creare-bd" method="get">
+            <button class= "button" type="submit">Creare BD</button>
+        </form>
+        <br/>
+        <br/>
+        <form action="/inserare-bd" method="get">
+            <button class= "button" type="submit">Încărcare BD</button>
+        </form>
+        <br/>
+        <form action="/afisare-produse" method="get">
+            <button class= "button" type="submit">Afișare BD</button>
+        </form>
+        </fieldset>
+        <br/>
+    <fieldset>
+        <h4>Produse în stoc</h4>
+        <br/>
+        <table class="center">
+            
+            <tr>
+                <th>Id</th>
+                <th>Denumire produs</th>
+                <th>Preț</th>
+            </tr>
+            <% if(produse){ %>            
+                <% for (var i = 0; i < produse.length; i++){ %>
+                    <tr>
+                        <td><%= produse[i].id %></td>
+                        <td><%= produse[i].nume %></td>
+                        <td><%= produse[i].specificatii %></td>
+                        
+                        <% if(utilizator){ %>
+                            <form action="/adaugare-cos" method="POST">
+                                <td><button class="button" type = "submit" name="id" value="<%=produse[i].id%>">Adaugă în coș</button></td>   
+                            </form>
+                        <%}else{%>
+                            <td><button disabled>Adaugă în coș</button></td>
+                        <%} %>
+                    </tr>
+                <% } %>
+            <% } %>
+        </table>
+    <br/>  
+    </fieldset>
+    <% } %>
+
+    <br/>
+    <% if(utilizator){ %>
+    <fieldset>
+        <div class="logat_ca">
+            <p><h4> Logat ca <%- utilizator -%> !<h4></p>
+        </div>   
+    </fieldset>
+    <% } %>
+</form>
